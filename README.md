@@ -32,8 +32,8 @@ SITE = StackAPI('stackoverflow')
 questions = SITE.fetch('questions', fromdate=datetime(2018,1,1,0,0), todate=datetime(2018,2,1,0,0), min=20, tagged='python', sort='votes')
 print(questions)
 ```
-他にも色々な条件でfetchできる．詳細は参考を参照．
-今回は質問についたタグから，どの質問が多くされているのか，その時に共起しているタグは何があるのかを調べる．  
+他にも色々な条件でfetchできる．詳細は参考文献を見て欲しい．
+
 
 ## pandas
 pandasはPythonでデータセットを扱う際によく使われるパッケージ．
