@@ -14,7 +14,7 @@
 ## StackAPI
 プログラマに聞き込みをするのは現実できではないので、プログラマが集うコミュニティからデータを収集する．
 今回は海外で最大の質問サイトStackOverflowからデータを持ってくる．  
-最近はスクレイピング（scraping，HTML形式で直接ダウンロードする方法）はサーバに余計な負荷をかけるため敬遠されている．今回はAPI（application platform interface）でデータをダウンロードする．
+最近はスクレイピング（scraping，HTML形式で直接ダウンロードする方法）はサーバに余計な負荷をかけるため敬遠されている．ここではAPI（application platform interface）を通してStackOverflowの質問データをダウンロードする．
 
 #### 準備
 StackAPIをインストールする．
