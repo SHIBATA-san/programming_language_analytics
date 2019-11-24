@@ -16,13 +16,13 @@
 今回は海外で最大の質問サイトStackOverflowからデータを持ってくる．  
 最近はスクレイピング（scraping，HTML形式で直接ダウンロードする方法）はサーバに余計な負荷をかけるため敬遠されている．今回はAPI（application platform interface）でデータをダウンロードする．
 
-### 準備
+#### 準備
 StackAPIをインストールする．
 ```bash:
 $ pip install stackapi
 ```
 
-### 使用例
+#### 使用例
 StackAPI型のオブジェクトにパラメータを設定し，fetchするとJSON形式でデータを返してくれる．
 ```python:
 from stackapi import StackAPI
@@ -39,7 +39,7 @@ print(questions)
 pandasはPythonでデータセットを扱う際によく使われるパッケージ．
 いろんなところでよく使われているので慣れておくと良い．
 
-### 準備
+#### 準備
 pandasをインストールする．
 ```bash:
 $ pip install stackapi
@@ -67,14 +67,14 @@ df2 = pd.DataFrame(df.count()).T
 ## sklearn
 scikit-learnはデータサイエンス系のツールキットパッケージで，基本的な機械学習の手法を網羅している．さらに発展問題をしたい人は専用のパッケージを入れたり，自作する必要がある．一般的な手法を試すだけならsklearnで十分でだろう．
 
-### 準備
+#### 準備
 sklearnとmatplotlibをインストールする．
 ```bash:
 $ pip install sklearn matplotlib
 ```
 
 
-## 参考
+# 参考
 公式サイト
 https://stackapi.readthedocs.io/en/latest/user/install.html
 詳細ドキュメント
