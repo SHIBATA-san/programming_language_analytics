@@ -1,0 +1,21 @@
+SELECT
+  questions.PyPostId AS Python_Questions
+
+FROM
+  (SELECT
+    p_tags.PostId AS PyPostId
+  FROM
+    Tags AS tag
+      INNER JOIN PostTags AS p_tags
+        ON tag.id = p_tags.TagId
+      INNER JOIN Posts AS posts
+        ON posts.Id = p_tags.PostId
+  WHERE
+    TagName = 'python') AS questions
+
+    INNER JOIN Posts AS post
+      ON questions.PyPostId = post.Id
+
+WHERE
+  CreationDate < '2018-02-01'
+  and CreationDate > '2018-01-01'

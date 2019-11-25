@@ -1,0 +1,6 @@
+SELECT
+  Tags.id as PyTagId
+FROM
+  Tags
+WHERE
+  Tags.TagName = 'python'
